@@ -1,6 +1,88 @@
 
 
+/*==============================
+main styles
+==============================*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.thick-hr {
+    max-width: 95%;
+    height: 4px;
+    background-color: slategray;
+    margin-bottom: 1px;
+}
+
+.thin-hr {
+    max-width: 95%;
+    height: 1px;
+    background-color: slategray;
+    margin-top: 0;
+}
+
+
+/*===========================
+Main Header Area
+===========================*/
+
 header {
-    background-color: darkslategray;
-    color: white
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header > h1 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+/* ===========================
+Form Introduction
+=============================*/
+
+.form-intro{
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.form-header{
+    font-size: 0.8rem;
+}
+
+.form-explain{
+    color: lightgrey;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+
+
+/*========================
+Form Styling
+========================*/
+
+.form-title{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 10vh;
+}
+
+form{
+    display: flex;
+}
+
+.input-box{
+    background-color: lightgrey;
+    height: 2rem;
 }
