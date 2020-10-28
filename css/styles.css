@@ -7,20 +7,20 @@ main styles
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif
 }
 
 .thick-hr {
     max-width: 95%;
     height: 4px;
-    background-color: slategray;
+    background-color: black;
     margin-bottom: 1px;
 }
 
 .thin-hr {
     max-width: 95%;
     height: 1px;
-    background-color: slategray;
+    background-color: black;
     margin-top: 0;
 }
 
@@ -74,15 +74,137 @@ Form Styling
 
 .form-title{
     font-weight: 600;
-    font-size: 1rem;
-    margin-top: 10vh;
+    font-size: 1.25rem;
+    max-width: 80%;
+    font-weight: bold;
+    
 }
 
 form{
     display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.input-div{
+    margin-top: 20px;
 }
 
-.input-box{
-    background-color: lightgrey;
+.input-label{
+    margin-bottom: 40px;
+}
+input{
+    background-color: lightgray;
     height: 2rem;
+    width: 100%;
+    font-style: italic;
+    border-radius: 2%;
+    border: none;
+    display: block;
+    margin-top: 0.5em;
+}
+
+select{
+    background-color: lightgray;
+    height: 2rem;
+    width: 100%;
+    border-radius: 2%;
+    border: none;
+    display: block;
+    margin-top: 0.5em;
+}
+
+input[type="text"]::placeholder{
+    padding-right: 10px;
+    text-align: right;
+}
+
+#zipcode{
+    margin-bottom: 40px;
+    max-width: 100px;
+}
+.newsletter-choice{
+    color: lightgrey;
+    margin-top: 0;
+}
+
+.checkbox-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.check-list-item{
+    display: flex;
+    margin-top: 10px;
+}
+.checkbox-label{
+    order: 10;
+}
+.checkbox{
+    height: 11px;
+    width: 11px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+input[type="radio"]{
+    width: auto;
+    height: auto;
+}
+.radio{
+    margin-right: 10px;
+}
+.radios{
+    display: flex;
+    flex-direction: column;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+}
+#write-in{
+    height: 20vh;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-div{
+    max-width: 80%;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.form-submit{
+    color: white;
+    background-color:#44c78e;
+    margin: 0 auto;
+    border: none;
+    width: 85%;
+    padding: 20px;
+    margin: 20px auto;
+    flex-grow: initial;
+    font-size: 2rem;
+    border-radius: 3%;
+}
+
+/*===================================
+@media queries for responsive styling
+====================================*/
+
+@media(min-width: 1024px){
+
+    form {
+        max-width: 50%;
+    }
+    .btn-div{
+        max-width: 50%;
+    }
+    .form-submit{
+        width: 100%;
+    }
 }
