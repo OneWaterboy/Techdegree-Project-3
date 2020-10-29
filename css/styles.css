@@ -35,7 +35,7 @@ body {
      width: 100%;               
      background-color:black;
      height: 4px;
-     margin-bottom: 10px;
+     margin-bottom: 40px;
    }
 
 
@@ -186,6 +186,7 @@ input[type="radio"]{
 .textarea{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 #write-in{
     height: 20vh;
@@ -214,14 +215,47 @@ input[type="radio"]{
     border-radius: 3%;
 }
 
+.copyright{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.5;
+}
+
 /*===================================
 @media queries for responsive styling
 ====================================*/
 
 @media(min-width: 768px){
 
-    form {
+    .form-header{
         max-width: 50%;
+        margin: 0 auto;
+    }
+    .form-explain{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    form {
+        max-width: 60%;
+    }
+    .input-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .input-label{
+        /*height: 2em;*/
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .input-box{
+        flex-grow: initial;
+        height: 3em;
+        max-width: 60%;
+    }
+    select{
+        max-width: 60%;
+        height: 3em;
     }
     .btn-div{
         max-width: 50%;
