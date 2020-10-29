@@ -30,6 +30,18 @@ body {
 }
 
 
+ hr {
+     border: 0;
+     clear:both;
+     display:block;
+     width: 100%;               
+     background-color:black;
+     height: 4px;
+     margin-bottom: 10px;
+   }
+
+
+
 /*===========================
 Main Header Area
 ===========================*/
@@ -218,5 +230,12 @@ input[type="radio"]{
     }
     .form-submit{
         width: 100%;
+    }
+    .thickline{
+        max-width: 50%;
+    }
+    .thinline{
+        max-width: 50%;
+        margin: 0 auto;
     }
 }
