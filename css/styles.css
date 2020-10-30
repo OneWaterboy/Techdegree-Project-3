@@ -86,6 +86,7 @@ Form Introduction
 /*========================
 Form Styling
 ========================*/
+
 fieldset{
     border: none;
 }
@@ -240,13 +241,13 @@ input[type="radio"]{
     }
     .input-div{
         display: flex;
-        justify-content: space-between;
+        justify-content: left;
         align-items: center;
     }
     .input-label{
-        /*height: 2em;*/
         margin-bottom: 0px;
         padding-bottom: 0px;
+        margin-right: auto;
     }
     .input-box{
         flex-grow: initial;
@@ -264,10 +265,10 @@ input[type="radio"]{
         width: 100%;
     }
     .thickline{
-        max-width: 50%;
+        max-width: 60%;
     }
     .thinline{
-        max-width: 50%;
+        max-width: 60%;
         margin: 0 auto;
     }
 }
