@@ -241,7 +241,6 @@ input[type="radio"]{
     }
     .input-div{
         display: flex;
-        justify-content: left;
         align-items: center;
     }
     .input-label{
