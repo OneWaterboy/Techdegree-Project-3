@@ -243,11 +243,13 @@ input[type="radio"]{
 input:focus{
     background-color: whitesmoke;
     border-color: forestgreen !important;
+    transition: 0.5s ease-in;
 }
 
 select:focus{
     background-color: whitesmoke;
-    border-color: forestgreen;
+    border-color: forestgreen !important;
+    transition: 0.5s ease-out;
 }
 
 /*===================================
